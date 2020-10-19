@@ -1,0 +1,168 @@
+html, body {
+	font: Polo;
+	margin: 0;
+	padding: 0;
+	background: #FAFAFA;
+	height: 100%;
+}
+
+header {
+	width: 100vw;
+	min-height: 5vh;
+	background: rgb(0,145,187);
+}
+
+header h1 {
+	padding: 2vh;
+	margin: 0;
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.content {
+	width: 90vw;
+    margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.content h1{
+	font-size: 1,5em;
+	
+}
+
+.content p{
+	font-size: 1em;
+	height: 70%;
+}
+.content p2{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.button-group{
+	display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vw;
+    padding: 0;
+}
+
+.button-group li{
+	display: block;
+	width: 33%;
+    padding: 0.5vw;
+    list-style-type: none;
+    background-color: #FFF;
+    text-align: center;
+    color: rgb(0,145,187);
+}
+
+.button-group li:hover:not(.selected) {
+    background-color: rgb(0,145,187);
+    opacity: 0.9;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.button-group li.selected {
+    background-color: rgb(0,145,187);
+    color: #FFF;
+}
+
+#nextButton {
+	bottom: 7vh;
+	color: rgb(0,145,187);
+	float: right;
+	position: absolute;
+	right: 5vh;
+}
+
+#microphone{
+	bottom: 12vh;
+	color: rgb(0,145,187);
+	size: 10px;
+}
+
+footer {
+	position: fixed;
+	width: 100vw;
+	height: 5vh;
+	background: rgb(0,145,187);
+	bottom:0;
+}
+
+footer p {
+	padding: 2vh;
+	margin: 0;
+	font-size: 0.5em;
+	color: #FFFFFF;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#progressBarHolder {
+	/* begrenzen des Fortschrittbalkens auf 300px breite */
+	width: 300px;
+	height: 15%;
+	margin-top:20px;
+  }
+  
+  #progressBar {
+	  /* Farbverlauf als Hintergrundbild */
+	  background-image: linear-gradient(#fff, #06d6a9);
+	  /* Hintergrund soll nicht über das element wiederholt werden */
+	  background-repeat:no-repeat;
+	  /* in der Breite zunächst 0% gefüllt, in der Höhe 100% */
+	  background-size: 0% 100%;
+	  border: 1px solid #06d6a9;
+	  border-radius: 5px;
+	  overflow: hidden;
+  }
+  
+  #progressInformation {
+	  color: rgba(0,0,0,0.87);
+	  font-size: 20px;
+	  text-align: center;
+  }
+
+.container{
+	border: 2px solid #dedede;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.container::after{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.container img{
+	float: left;
+	max-width 3px;
+	width:10%;
+	margin-right:20 px;
+	border-radius: 50%;
+}
+
+.container img.right{
+	float:right;
+	margin-left: 20px;
+	margin-right:0;
+}
+
+.btn-circle{
+	padding: 6px, 0px;
+	text-align: center;
+	border-radius: 15px !important;
+	width: 6em;
+	height: 6em;
+}
