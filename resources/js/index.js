@@ -35,7 +35,8 @@ function nextButtonClicked(){
         if(demographicsPage.checkIfDataIsComplete() === true){
             demographicsPage.fillDatabase();
             demographicsLayout.classList.add("hidden");
-            szenarioHandler.openSzenario(new Szenario(Config.HEADING_1, Config.SZENARIO_1, Config.HEADING2_1, Config.ANSWER_1, Config.HEADING3_1));
+            console.log("bin noch in index");
+            szenarioHandler.openSzenario();
             } else{
                 alert("Du hast noch nicht alles ausgefüllt!");
                 counterNextButton--;

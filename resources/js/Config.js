@@ -12,10 +12,16 @@ const Config = {
 	SURVEY_QUESTION: "Wie fandest du ",
 
 	ANSWER_1: "Das sage ich dir nach deinem Befehl 1",
+	ANSWER_2: "Das sage ich dir nach deinem Befehl 2",
 
 	HEADING2_1: "Wie lautet dein Sprachbefehl für Szenario 1?",
+	HEADING2_2: "Wie lautet dein Sprachbefehl für Szenario 2?",
 
 	HEADING3_1: "Wie fandest du Szenario 1?",
+	HEADING3_2: "Wie fandest du Szenario 2?",
+
+	HEADING_END: "Vielen Dank!",
+	PARAGRAPH_END: "Du hast uns sehr weitergeholfen! Wir sind gepannt auf die Ergebnisse!",
 };
 
 Object.freeze(Config);

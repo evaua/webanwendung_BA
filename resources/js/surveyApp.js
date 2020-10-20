@@ -24,10 +24,6 @@ class surveyApp {
     }
 
     checkIfDataIsComplete(){
-        var age = document.getElementById("age").value;
-        if(age === ""){
-            return false;
-        }
         return true;
     }
 }

@@ -1,6 +1,7 @@
 class Szenario {
 
-    constructor(heading, description, heading2, answer, heading3) {
+    constructor(id, heading, description, heading2, answer, heading3) {
+      this.id = id;
       this.description = description || "So sieht die Aufgabe aus";
       this.heading = heading || "Szenario 1";
       this.heading2 = heading2 || "Wie lautet dein Sprachbefehl für Szenario 1?";

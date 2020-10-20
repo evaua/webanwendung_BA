@@ -1,5 +1,6 @@
 import database from "./database.js";
 import Config from "./Config.js";
+import szenarioHandler from "./szenarioHandler.js";
 
 //Code partially from: https://blog.addpipe.com/using-recorder-js-to-capture-wav-audio-in-your-html5-web-site
 //Using this library: https://github.com/mattdiamond/Recorderjs
@@ -76,10 +77,10 @@ https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia */
         micButton.disabled = true;
         stopButton.disabled = true;
         nextButton.disabled = false;
-        var avatar = document.querySelector(".container"),
-        buddyAnswer = document.getElementById("buddyAnswer");
-        avatar.classList.remove("hidden");
-        buddyAnswer.innerHTML = Config.ANSWER_1;
+        szenarioHandler.setAnswer();
+        
+        
+        
 
         //reset button just in case the recording is stopped while paused 
         /*pauseButton.innerHTML = "Pause";*/
@@ -124,6 +125,9 @@ class RecorderApp{
         stopButton.addEventListener("click", stopRecording);
         nextButton.disabled = true;
         stopButton.disabled = true;
+        if(micButton.disabled === true){
+            micButton.disabled = false;
+        }
     }
 
 }
