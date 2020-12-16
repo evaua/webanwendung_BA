@@ -16,8 +16,6 @@
     firebase.initializeApp(firebaseConfig);
     storage = firebase.storage();
     database = firebase.database();
-    //storage = require('@google-cloud/storage');
-    
   }
 
   function createDBReference(reference){
